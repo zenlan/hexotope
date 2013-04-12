@@ -1,36 +1,8 @@
-.textshadow {
-  text-shadow: 1px 1px 0px #F5F1EE;
-  filter: Shadow(Color=#F5F1EE, Direction=130, Strength=1);
-}
-
-.ie body .textshadow {
-  filter: none;
-}
-
-.clearfix:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
 body {
   font-family: Lucida Sans Unicode, Verdana, Arial, sans-serif;
   color: #383934;
   background: #E1DED9;
 }
-
-canvas {
-}
-
-.left {
-  float:left;
-}
-
-.right {
-  float:right;
-}
-
 .banner {
   background: #D8D4D1;
   text-align: center;
@@ -43,9 +15,8 @@ canvas {
   -moz-box-shadow: 1px 1px 0px #F5F1EE;
   box-shadow:1px 1px 0px  #F5F1EE;
 }
-
 .button {
-  font-family: Verdana, Arial, sans-serif;
+  font-family: Lucida Sans Unicode, Verdana, Arial, sans-serif;
   font-size: 12px;
   width: auto;
   background: #e1ded9;
@@ -59,34 +30,40 @@ canvas {
   border: 1px solid rgba(0,0,0,0.2);
   box-shadow: 0 1px 1px rgba(0,0,0,0.3);
 }
-
 .button:hover,
 .button:focus {
   background: -moz-linear-gradient(#fff, #ccc);
   background: -webkit-linear-gradient(#fff, #ccc);
   background: -o-linear-gradient(#fff, #ccc);
 }
-
 .selected {
   background: -moz-linear-gradient(#ccc, #fff);
   background: -webkit-linear-gradient(#ccc, #fff);
   background: -o-linear-gradient(#ccc, #fff);
 }
-
+.textshadow {
+  text-shadow: 1px 1px 0px #F5F1EE;
+  filter: Shadow(Color=#F5F1EE, Direction=130, Strength=1);
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
 #sort-by li, #sort-direction li {
   list-style-type: none;
   display: inline-block;
   margin: 2px;
 }
+a {color: #383934;text-decoration: none;}
+.isotope ul {list-style-type: none;}
+canvas {}
+.left {float:left;}
+.right {float:right;}
+.ie body .textshadow {filter: none;}
 
-a {
-  color: #383934;
-  text-decoration: none;
-}
-
-.isotope ul {
-  list-style-type: none;
-}
 /**** Isotope Filtering ****/
 
 .isotope-item {
