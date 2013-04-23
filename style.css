@@ -4,6 +4,8 @@ body {
   background: #E1DED9;
 }
 .banner {
+  position: fixed;
+  z-index: 200;
   background: #D8D4D1;
   text-align: center;
   padding: 20px;
@@ -45,6 +47,9 @@ body {
   text-shadow: 1px 1px 0px #F5F1EE;
   filter: Shadow(Color=#F5F1EE, Direction=130, Strength=1);
 }
+.ie body .textshadow {
+  filter: none;
+}
 .clearfix:after {
   content: ".";
   display: block;
@@ -52,17 +57,19 @@ body {
   clear: both;
   visibility: hidden;
 }
+a {
+  color: #383934;
+  text-decoration: none;
+}
+.left {float:left;}
+.right {float:right;}
+
+.isotope ul {list-style-type: none;}
 #sort-by li, #sort-direction li {
   list-style-type: none;
   display: inline-block;
   margin: 2px;
 }
-a {color: #383934;text-decoration: none;}
-.isotope ul {list-style-type: none;}
-canvas {}
-.left {float:left;}
-.right {float:right;}
-.ie body .textshadow {filter: none;}
 
 /**** Isotope Filtering ****/
 
