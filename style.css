@@ -71,6 +71,11 @@ a {
   margin: 2px;
 }
 
+#results {
+  position:relative;
+  top: 230px;
+}
+
 /**** Isotope Filtering ****/
 
 .isotope-item {
