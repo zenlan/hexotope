@@ -1,66 +1,70 @@
 <!DOCTYPE html>
-<!--[if ie]><html class="ie"><![endif]-->
-<!--[if !ie]><html><![endif]-->
-<head>
-  <title>Hexotope</title>
-  <meta name="keywords" content="hex, colors, colours, isotope, jquery, masonry, hex chart">
-  <meta name="description" content="Doodling in colour with Isotope">
-  <meta property="og:title" content="Hexotope" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://www.zenlan.com/hexotope" />
-  <meta property="og:image" content="http://www.zenlan.com/hexotope/og.jpg" />
-  <meta name="twitter:card" value="summary">
-  <meta name="twitter:site" value="@zenlan">
-  <meta name="twitter:creator" value="@zenlan">
-  <meta name="twitter:description" value="Dynamic canvas masonry">
-  <meta name="twitter:domain" content="www.zenlan.com">
-  <link rel='stylesheet' href='style.css' />
-  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-  <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.min.js"></script>
-  <script type="text/javascript" src="http://isotope.metafizzy.co/jquery.isotope.min.js"></script>
-  <script type="text/javascript" src="script.js"></script>
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', '']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
-</head>
-<body>
-  <div class="banner container clearfix">
-    <div class="left clearfix"><h2 class="textshadow">Hexotope</h2></div>
-    <div class="right clearfix">
-      <section id="options" class="clearfix">
-        <ul id="sort-by" class="option-set clearfix" data-option-key="sortBy">
-          <li><h3>Order</h3></li>
-          <li><a class="button" href="#sortBy=original-order" data-option-value="original-order">Original</a></li>
-          <li><a class="button" href="#sortBy=hIndex" data-option-value="hIndex">Hex Value</a></li>
-          <li><a class="button" href="#sortBy=rIndex" data-option-value="rIndex">Red Index</a></li>
-          <li><a class="button" href="#sortBy=gIndex" data-option-value="gIndex">Green Index</a></li>
-          <li><a class="button" href="#sortBy=bIndex" data-option-value="bIndex">Blue Index</a></li>
-          <li><a class="button" href="#sortBy=xIndex" data-option-value="xIndex">Primary Key</a></li>
-          <li><a class="button" href="#sortBy=random" data-option-value="random">Random</a></li>
-        </ul>
-        <ul id="sort-direction" class="option-set clearfix" data-option-key="sortAscending">
-          <li><a class="button" href="#sortAscending=true" data-option-value="true">Ascending</a></li>
-          <li><a class="button" href="#sortAscending=false" data-option-value="false">Descending</a></li>
-        </ul>
-      </section>
-      <section id="actions" class="clearfix">
-        <input class="button" id="gen" type="submit" value="Generate"/>
-        <input class="button" id="reset" type="submit" value="Clear"/>
-        <input class="button" id="shuffle" type="submit" value="Shuffle"/>
-        <label for="tiles">Small Tiles</label>
-        <input type="checkbox" id="tiles" value="1"/>
-      </section>
+<html>
+  <head>
+    <title>Hexotope</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="hex, colors, colours, isotope, jquery, masonry, hex chart">
+    <meta name="description" content="Doodling in colour with Isotope">
+    <meta property="og:title" content="Hexotope" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.zenlan.com/hexotope" />
+    <meta property="og:image" content="https://www.zenlan.com/hexotope/og.jpg" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@zenlan">
+    <meta name="twitter:creator" content="@zenlan">
+    <meta name="twitter:description" content="Dynamic canvas masonry">
+    <meta name="twitter:domain" content="www.zenlan.com">
+    <link rel='stylesheet' href='style.css' />
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-32854293-1']);
+      _gaq.push(['_trackPageview']);
+      (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="banner container clearfix">
+      <div class="left clearfix"><h2 class="textshadow">Hexotope</h2></div>
+      <div class="right clearfix">
+        <section id="options" class="clearfix">
+          <ul id="sort-by" class="option-set clearfix" data-option-key="sortBy">
+            <li><h3>Order</h3></li>
+            <li><a class="button" href="#sortBy=original-order" data-option-value="original-order">Original</a></li>
+            <li><a class="button" href="#sortBy=hIndex" data-option-value="hIndex">Hex Value</a></li>
+            <li><a class="button" href="#sortBy=rIndex" data-option-value="rIndex">Red Index</a></li>
+            <li><a class="button" href="#sortBy=gIndex" data-option-value="gIndex">Green Index</a></li>
+            <li><a class="button" href="#sortBy=bIndex" data-option-value="bIndex">Blue Index</a></li>
+            <li><a class="button" href="#sortBy=xIndex" data-option-value="xIndex">Primary Key</a></li>
+            <li><a class="button" href="#sortBy=random" data-option-value="random">Random</a></li>
+          </ul>
+          <ul id="sort-direction" class="option-set clearfix" data-option-key="sortAscending">
+            <li><a class="button" href="#sortAscending=true" data-option-value="true">Ascending</a></li>
+            <li><a class="button" href="#sortAscending=false" data-option-value="false">Descending</a></li>
+          </ul>
+        </section>
+        <section id="actions" class="clearfix">
+          <input class="button" id="gen" type="submit" value="Generate"/>
+          <input class="button" id="reset" type="submit" value="Clear"/>
+          <input class="button" id="shuffle" type="submit" value="Shuffle"/>
+          <label for="tiles">Small Tiles</label>
+          <input type="checkbox" id="tiles" value="1"/>
+        </section>
+      </div>
     </div>
-  </div>
-  <div id="results" class="isotope">
-    <ul id="list"></ul>
-  </div>
-</body>
+    <div id="results" class="isotope">
+      <ul id="list"></ul>
+    </div>
+  </body>
 </html>
